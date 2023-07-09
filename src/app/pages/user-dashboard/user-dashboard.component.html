@@ -9,7 +9,107 @@
       <app-header></app-header>
     </div>
     <div class="content">
-      <router-outlet></router-outlet>
+      <div style="display: flex; justify-content: end">
+        <div class="card">
+          <div class="card-body m-0">
+            <span style="font-weight: 600; font-size: medium">count :</span>
+            <span>10</span>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 m-0 p-0">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="card" style="height: 380px">
+            <div class="card-body m-0">
+              <div class="h5 text-center">Top Ups</div>
+              <div
+                style="display: flex; justify-content: center"
+                *ngFor="let i of topups"
+              >
+                <div
+                  style="
+                    background-color: #00adb5;
+                    border-radius: 8px;
+                    padding: 5px;
+                  "
+                  class="text-center mt-4 text-light"
+                >
+                  <i class="fa-solid fa-indian-rupee-sign"></i
+                  ><span
+                    style="margin-left: 5px; font-weight: 600; font-size: large"
+                    >{{ i.price }}</span
+                  ><i
+                    class="fa-solid fa-arrow-right"
+                    style="margin-left: 8px"
+                  ></i
+                  ><span
+                    style="font-size: large; font-weight: 600; margin-left: 3px"
+                    >{{ i.sms }} sms</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="card">
+            <div class="card-body m-0">
+              <div class="h5 text-center">Recent Sms</div>
+              <div style="overflow-x: auto">
+                <table class="table table-bordered table-hover text-center">
+                  <thead>
+                    <tr>
+                      <th>S.No</th>
+                      <th>To</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>1234435364</td>
+                      <td>sent</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>1234435364</td>
+                      <td>sent</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>1234435364</td>
+                      <td>sent</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>1234435364</td>
+                      <td>sent</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>1234435364</td>
+                      <td>sent</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div style="display: flex;justify-content: end;">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <button class="page-link">Previous</button>
+                    </li>
+
+                    <li class="page-item">
+                      <button class="page-link">Next</button>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="footer">
       <app-footer></app-footer>

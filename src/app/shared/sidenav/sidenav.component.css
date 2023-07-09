@@ -10,7 +10,7 @@
   left: 0;
   height: 100%;
   width: 260px;
-  background: #7773a1;
+  background: #222831;
   z-index: 100;
   transition: all 0.5s ease;
 }
@@ -60,7 +60,7 @@
   transition: all 0.4s ease;
 }
 .sidebar .nav-links li:hover {
-  background: #1d1b31;
+  background: #00adb5;
 }
 .sidebar .nav-links li .iocn-link {
   display: flex;
@@ -104,7 +104,7 @@
 .sidebar .nav-links li .sub-menu {
   padding: 6px 6px 14px 80px;
   margin-top: -10px;
-  background: #1d1b31;
+  background: #00adb5;
   display: none;
 }
 .sidebar .nav-links li.showMenu .sub-menu {
@@ -270,7 +270,7 @@
   }
   .sidebar .nav-links li:hover span.link_name {
     display: block;
-    background: #1d1b31;
+    background: #00adb5;
     color: #fff !important;
     padding: 6px 10px;
     border-radius: 0 7px 7px 0;
