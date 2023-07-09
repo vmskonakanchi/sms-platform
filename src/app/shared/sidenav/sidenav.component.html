@@ -1,0 +1,114 @@
+<div class="sidebar">
+    <div class="logo-details">
+      <i class="fa-solid fa-building-shield"></i>
+      <span class="logo_name">PropertyListing</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a routerLink="/dashboard">
+          <i class="fa-solid fa-gauge"></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" routerLink="/dashboard">Dashboard</a></li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="/websiteviews">
+          <i class="fa-solid fa-street-view"></i>
+          <span class="link_name">Website Views</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li>
+            <a class="link_name" routerLink="/websiteviews">Website Views</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="/clients">
+          <i class="fa-solid fa-people-group"></i>
+  
+          <span class="link_name">Clients</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" routerLink="/clients">Clients</a></li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="/agents">
+          <i class="fa-solid fa-users"></i>
+  
+          <span class="link_name">Agents</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" routerLink="/agents">Agents</a></li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="/properties">
+          <i class="fa-solid fa-house-lock"></i>
+  
+          <span class="link_name">properties</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" routerLink="/properties">properties</a></li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="/payments">
+          <i class="fa-solid fa-money-bill-1"></i>
+  
+          <span class="link_name">Payments</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" routerLink="/payments">Payments</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a>
+            <i class="fa-solid fa-star"></i>
+  
+            <span class="link_name">Master</span>
+          </a>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name">Master</a></li>
+          <li><a routerLink="/source">Add Source</a></li>
+          <li><a routerLink="/propertytype">Add PropertyType</a></li>
+          <li><a routerLink="/aminities">Add Amenities</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a>
+            <i class="fa-solid fa-list-check"></i>
+  
+            <span class="link_name">Leads</span>
+          </a>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name">Leads</a></li>
+  
+          <li><a routerLink="/allleads">all Leads</a></li>
+          <li><a routerLink="/freshleads">fresh Leads</a></li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="/subscription">
+          <i class="fa-solid fa-subscript"></i>
+  
+          <span class="link_name">Subscriptions</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li>
+            <a class="link_name" routerLink="/subscription">Subscriptions</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <router-outlet></router-outlet>
+  

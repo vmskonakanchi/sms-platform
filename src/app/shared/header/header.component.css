@@ -1,0 +1,41 @@
+#header {
+  background-color: #b9c1e9;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+i {
+  font-size: 1.3rem;
+}
+img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+img:hover {
+  cursor: pointer;
+}
+#child1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 10%;
+}
+.dropdown-menu span {
+  margin-left: 6px;
+}
+#i:hover {
+  cursor: pointer;
+}
+.notify {
+  display: flex;
+  margin-left: 18px;
+}
+.fa-eye {
+  font-size: small;
+}
+.fa-bars:hover {
+  cursor: pointer;
+}
