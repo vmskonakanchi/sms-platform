@@ -8,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export default class UserDashboardComponent implements OnInit {
   ngOnInit(): void {}
 
+  topups: any[] = [
+    { price: 1, sms: 1 },
+    { price: 5, sms: 10 },
+    { price: 20, sms: 25 },
+    { price: 30, sms: 25 },
+  ];
+
   toogleClass() {
     let sidebar = <HTMLElement>document.querySelector('.sidebar');
     let closeBtn = <HTMLElement>document.querySelector('#btn');
