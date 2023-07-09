@@ -9,6 +9,9 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth, getAuth } from '@angular/fire/auth';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { FooterComponent } from './shared/footer/footer.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { SidenavComponent } from './shared/sidenav/sidenav.component';
 
 /**
  * This application uses firebase as it's backend
@@ -16,7 +19,14 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
  * and the modules injected are authentication , firestore and if we want we can do it as well
  */
 @NgModule({
-  declarations: [AppComponent, LandingPage, UserDashboard],
+  declarations: [
+    AppComponent,
+    LandingPage,
+    UserDashboard,
+    FooterComponent,
+    HeaderComponent,
+    SidenavComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

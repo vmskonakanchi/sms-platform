@@ -1,1 +1,80 @@
-<button (click)="handleLogin()">Login</button>
+<nav class="navbar navbar-expand-lg" style="background-color: #222831">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler bg-light"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 90%">
+        <li class="nav-item">
+          <a routerLink="/aboutus" class="nav-link text-light">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="row m-0 p-0 mt-5">
+  <div class="col-lg-8 col-md-7 col-sm-6 col-xs-12">
+    <div style="margin-left: 9%; margin-top: 5px">
+      <div style="font-size: 35px; font-family: sans-serif">MY BRAND NAME</div>
+      <div class="mt-5" style="font-size: 26px; font-family: sans-serif">
+        WHERE YOU AND I
+      </div>
+      <div style="font-size: 26px; font-family: sans-serif">CONNECT</div>
+      <div style="font-size: 26px; font-family: sans-serif">THROUGH SMS</div>
+      <div class="mt-3">
+        <ul>
+          <li>Sign Up Bonus</li>
+          <li>Easy Of Use</li>
+          <li>Only One Endpoint To Send Sms</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+    <div class="card" style="background-color: #222831; height: 360px">
+      <div class="card-body m-0">
+        <div
+          class="text-center text-light fs-5"
+          style="font-family: sans-serif"
+        >
+          Login
+        </div>
+        <form>
+          <div class="row m-0 p-0 mt-4">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <input
+                id="mail"
+                type="email"
+                class="form-control form-control-lg"
+                maxlength="32"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <input
+                id="password"
+                type="password"
+                class="form-control form-control-lg mt-4"
+                maxlength="32"
+                placeholder="Password"
+              />
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+              <button class="btn btn-primary mt-5 fs-5" type="submit">
+                Login
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
